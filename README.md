@@ -1,4 +1,4 @@
-#Docker Deploy Instructions:
+# Docker Deploy Instructions:
 
 1. Visit https://labs.play-with-k8s.com/#
 
