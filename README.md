@@ -1,6 +1,6 @@
 # Docker Deploy Instructions:
 
-1. Visit https://labs.play-with-k8s.com/#
+1. Visit https://labs.play-with-docker.com/
 
 1. `docker build https://github.com/mello-moose/twelve-factor.git -t twelve-factor:latest`
 
