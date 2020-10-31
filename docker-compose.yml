@@ -11,9 +11,9 @@ services:
     ports:
       - 5432:5432
     environment:
-      - POSTGRES_PASSWORD=nole_pass
-      - POSTGRES_USER=nole_user
-      - POSTGRES_DB=nole_db
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=testdb
     restart: unless-stopped
   twelve-factor-app:
     image: twelve-factor:latest
