@@ -16,7 +16,7 @@ services:
       - POSTGRES_DB=nole_db
     restart: unless-stopped
   twelve-factor-app:
-    image: springbootapp:latest
+    image: twelve-factor:latest
     network_mode: bridge
     container_name: twelve-factor-app
     expose:
