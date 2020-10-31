@@ -1,0 +1,32 @@
+version: "3"
+services:
+  postgres:
+    image: postgres:latest
+    network_mode: bridge
+    container_name: postgres
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    expose:
+      - 5432
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=nole_pass
+      - POSTGRES_USER=nole_user
+      - POSTGRES_DB=nole_db
+    restart: unless-stopped
+  twelve-factor-app:
+    image: springbootapp:latest
+    network_mode: bridge
+    container_name: twelve-factor-app
+    expose:
+      - 8080
+    ports:
+      - 8080:8080
+    restart: unless-stopped
+    depends_on:
+      - postgres
+    links:
+      - postgres
+volumes:
+  postgres-data:
