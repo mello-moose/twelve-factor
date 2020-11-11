@@ -22,6 +22,6 @@
 
 1. `curl https://raw.githubusercontent.com/mello-moose/twelve-factor/feature/backing_service/docker-compose.yml --output docker-compose.yml`
 
-1. `curl https://raw.githubusercontent.com/mello-moose/twelve-factor/feature/backing_service/ngix.conf --output ngix.conf
+1. `curl https://raw.githubusercontent.com/mello-moose/twelve-factor/feature/backing_service/ngix.conf --output ngix.conf`
 
 1. `docker-compose up --scale twelve-factor-app=5`
