@@ -11,6 +11,7 @@ public class Account {
     private Long id;
     private String name;
     private Double balance;
+    private String instanceName;
 
     public Long getId() {
         return id;
@@ -34,5 +35,13 @@ public class Account {
 
     public void setBalance(Double balance) {
         this.balance = balance;
+    }
+
+    public String getInstanceName() {
+        return instanceName;
+    }
+
+    public void setInstanceName(String instanceName) {
+        this.instanceName = instanceName;
     }
 }
