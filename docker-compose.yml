@@ -18,9 +18,8 @@ services:
     expose:
       - 8080
     environment:
-      - POSTGRES_PASSWORD=admin
-      - POSTGRES_USER=postgres
-      - POSTGRES_DB=testdb
+      - spring.datasource.username=admin1
+      - spring.datasource.password=postgres1
     restart: unless-stopped
     depends_on:
       - postgres
