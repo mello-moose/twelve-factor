@@ -10,6 +10,6 @@
 
 1. `docker-compose up --scale twelve-factor-app=3 -d`
 
-1. `docker logs root_twelve-factor-app_3`
+1. `docker-compose logs --tail=0 --follow`
 
 1. `docker kill root_twelve-factor-app_3`
