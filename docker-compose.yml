@@ -2,7 +2,7 @@ version: "3"
 services:
   postgres:
     image: postgres:latest
-    network_mode: bridge
+    #network_mode: bridge
     #container_name: postgres
     volumes:
       - postgres-data:/var/lib/postgresql/data
@@ -17,7 +17,7 @@ services:
     restart: unless-stopped
   twelve-factor-app:
     image: twelve-factor:latest
-    network_mode: bridge
+    #network_mode: bridge
     #container_name: twelve-factor-app
     expose:
       - 8080
