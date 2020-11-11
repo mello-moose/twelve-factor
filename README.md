@@ -8,4 +8,4 @@
 
 1. `curl https://raw.githubusercontent.com/mello-moose/twelve-factor/master/nginx.conf --output nginx.conf`
 
-1. `docker-compose up --scale twelve-factor-app=5`
+1. `docker-compose up --scale twelve-factor-app=3`
